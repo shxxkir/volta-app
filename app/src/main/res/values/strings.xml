@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MAD Project</string>
+    <string name="greeting">Hi, Sana!</string>
+    <string name="greeting2">Manage your home</string>
+    <string name="meterNo">28670387</string>
+    <string name="usageText">Energy Usage</string>
+    <string name="periodText">This Month</string>
+    <string name="totalCons">Total Energy Consumption</string>
+    <string name="topCons">Top Consumed</string>
+    <string name="estCons">Estimated Consumption</string>
+    <string name="predCost">Predicted Cost</string>
+    <string name="topConsumed">Kitchen</string>
+    <string name="addMeter">Add New Smart Meter</string>
+    <string name="meter1">28670387</string>
+    <string name="meterReading1">Meter Reading : 6587</string>
+    <string name="meterNo2">38780253</string>
+    <string name="meterReading2">Meter Reading : 4798</string>
+    <string name="meterNo_form">Meter Number</string>
+    <string name="elecAccNo">Electricity Account No</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="smartMeterForm">Smart Meter Form</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="smartMeters">Smart Meters</string>
+    <string name="meterReading">Meter Reading</string>
+    <string name="elecAccNum">230180946734</string>
+    <string name="streetData">39, Peiris Road</string>
+    <string name="cityData">Mount Lavinia</string>
+    <string name="readingData">6587</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+</resources>

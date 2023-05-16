@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2A8A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="217dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/greeting"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/greeting2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_bar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/usageSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/meterSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_bar" />
+
+    <ImageView
+        android:id="@+id/notifications"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="107dp"
+        app:layout_constraintBottom_toTopOf="@+id/periodSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meterSpinner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notifications" />
+
+    <TextView
+        android:id="@+id/greeting2"
+        android:layout_width="188dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/greeting2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/usageSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting" />
+
+    <Spinner
+        android:id="@+id/meterSpinner"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/custom_spinner"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/periodSpinner"
+        app:layout_constraintStart_toEndOf="@+id/menu_bar"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+    />
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/meterNo"
+        android:layout_width="115dp"
+        android:layout_height="31dp"
+        android:fontFamily="serif"
+        android:text="@string/meterNo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/meterSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/meterSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/meterSpinner"
+        app:layout_constraintTop_toTopOf="@+id/meterSpinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/usageSpinner"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="102dp"
+        android:background="@drawable/custom_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/periodSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting2" />
+
+    <TextView
+        android:id="@+id/usageText"
+        android:layout_width="116dp"
+        android:layout_height="28dp"
+        android:text="@string/usageText"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usageSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/usageSpinner"
+        app:layout_constraintStart_toStartOf="@+id/usageSpinner"
+        app:layout_constraintTop_toTopOf="@+id/usageSpinner" />
+    />
+
+    <Spinner
+        android:id="@+id/periodSpinner"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meterNo" />
+
+    <TextView
+        android:id="@+id/periodText"
+        android:layout_width="116dp"
+        android:layout_height="28dp"
+        android:text="@string/periodText"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/periodSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/periodSpinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/periodSpinner"
+        app:layout_constraintTop_toTopOf="@+id/periodSpinner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="294dp"
+        android:background="@drawable/rounded_corner2"
+        android:backgroundTint="@color/Theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box4"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="101dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#96A1EA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/box3"
+            app:layout_constraintTop_toBottomOf="@+id/box2">
+
+            <TextView
+                android:id="@+id/predCost"
+                android:layout_width="116dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/predCost"
+                android:textColor="@color/Theme"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Rs.15312"
+                android:textColor="#373636"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/predCost" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box3"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="101dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#96A1EA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box1">
+
+            <TextView
+                android:id="@+id/estCons"
+                android:layout_width="151dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/estCons"
+                android:textColor="@color/Theme"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="183kWh"
+                android:textColor="#373636"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estCons" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box2"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#96A1EA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/topCons"
+                android:layout_width="119dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/topCons"
+                android:textColor="@color/Theme"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Kitchen"
+                android:textColor="#373636"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topCons" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box1"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#96A1EA"
+            app:layout_constraintEnd_toStartOf="@+id/box2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/totalCons"
+                android:layout_width="149dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/totalCons"
+                android:textColor="@color/Theme"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="121kWh"
+                android:textColor="#373636"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/graph"
+        android:layout_width="410dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usageSpinner"
+        app:layout_constraintVertical_bias="0.095"
+        app:srcCompat="@drawable/_23_1238943_biology_line_graph_examples_hd_png_download" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
