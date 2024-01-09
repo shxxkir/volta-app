@@ -1,1 +1,1 @@
-Volta is an Energy Management App 
+Volta is an energy mangement mobile application developed using Kotlin. It integrates essential CRUD functionality within it. The app provides a comprehensive solution for efficient energy control and monitoring.
